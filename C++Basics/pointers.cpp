@@ -15,10 +15,10 @@ int main()
 
     cout<<"Value is "<<a<<" and Address is : "<<ptr<<endl;
 
-    free(ptr);
-
-    ptr = &b;   //Dangling Pointer, after freeing up the space we are again allocating 
-                //pointing to some objects
+    free(ptr);    //Dangling Pointer, after deallocating the memory space, ptr is still pointing
+                  //to that deallocated memomry.
+    // Solution of Dangling pointer is just Re-initialise the ptr to NULL or some other objects.
+    ptr = NULL;   
 
     cout<<"Value is "<<b<<" and Address is : "<<ptr<<endl;
 
