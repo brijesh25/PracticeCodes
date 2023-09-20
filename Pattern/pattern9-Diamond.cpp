@@ -57,6 +57,9 @@ void printDiamond(int n) {
 
 int main(){
 
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
     #ifndef ONLINE_JUDGE
 		//for getting input
 		freopen("C:\\Users\\brije\\Desktop\\Codes\\Github\\input.txt","r",stdin);

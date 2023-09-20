@@ -19,6 +19,14 @@ void printp1(int n){
 }
 
 int main(){
+
+    #ifndef ONLINE_JUDGE
+		//for getting input
+		freopen("C:\\Users\\brije\\Desktop\\Codes\\Github\\input.txt","r",stdin);
+		//for getting output
+		freopen("C:\\Users\\brije\\Desktop\\Codes\\Github\\output.txt","w",stdout);
+	#endif
+
     int t;
     cin>>t;
 

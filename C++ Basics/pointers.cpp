@@ -18,7 +18,7 @@ int main()
     free(ptr);    //Dangling Pointer, after deallocating the memory space, ptr is still pointing
                   //to that deallocated memomry.
     // Solution of Dangling pointer is just Re-initialise the ptr to NULL or some other objects.
-    ptr = NULL;   
+    ptr = &b;   
 
     cout<<"Value is "<<b<<" and Address is : "<<ptr<<endl;
 
