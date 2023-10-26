@@ -21,6 +21,7 @@ class A{
         void showData(){
             cout<<"Value of a and b is "<<a<<" "<<b<<endl;
         }
+        
         friend A operator +(A,A);
 };
 
